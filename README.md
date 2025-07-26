@@ -6,9 +6,9 @@ A Retrieval-Augmented Generation (RAG) chatbot that allows users to upload docum
 
 ## Documentation
 
-For a detailed guide on this project, refer to the DeepWiki guide:
+For a detailed guide on this project, refer to the guide:
 
-**[DeepWiki Guide: Data Processing and Visualization RAG Chatbot](https://deepwiki.com/akshar1277/Data-Processing-and-Visualization-rag-chatbot-ultrasafe/1-overview)**
+**[Detailed Guide: Data Processing and Visualization RAG Chatbot](https://deepwiki.com/akshar1277/Data-Processing-and-Visualization-rag-chatbot-ultrasafe/1-overview)**
 
 ---
 ## Postman Collection
