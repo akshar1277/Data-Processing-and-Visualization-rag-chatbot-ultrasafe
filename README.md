@@ -135,6 +135,8 @@ streamlit run app.py
 
 ---
 
+
+
 ## How to Use
 
 ### 1. **Sign Up / Log In**
@@ -157,6 +159,32 @@ streamlit run app.py
 - Use the "Logout" button in the sidebar to end your session.
 
 ---
+
+## Sample `.env` File
+
+Below is a sample `.env` file to configure the environment variables required for the project. Replace the placeholder values with your actual credentials and settings.
+
+```properties
+# Sample .env file
+PINECONE_API_KEY=your-pinecone-api-key
+PINECONE_ENV=your-pinecone-environment
+VECTOR_DIM=1536
+INDEX_NAME=your-index-name
+PINECONE_CLOUD=aws
+PINECONE_REGION=your-region
+PINECONE_INDEX=your-index-name
+ULTRASAFE_API_KEY=your-ultrasafe-api-key
+ULTRASAFE_API_EMBEDDINGS_BASE=https://api.your-domain.com/embed/embeddings
+ULTRASAFE_MODEL=your-model-name
+LANGFUSE_SECRET_KEY=your-langfuse-secret-key
+LANGFUSE_PUBLIC_KEY=your-langfuse-public-key
+LANGFUSE_HOST=https://your-langfuse-host.com
+```
+
+Make sure to keep your `.env` file private and never share it publicly to avoid exposing sensitive information.
+
+---
+
 
 ## Notes
 
