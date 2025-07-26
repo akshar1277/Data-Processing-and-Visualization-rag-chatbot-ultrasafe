@@ -19,6 +19,54 @@ To test the API endpoints, use the Postman collection:
 
 ---
 
+## Installation Guide
+
+### 1. **Clone the Repository**
+```bash
+git clone <repo-url>
+cd Data-Processing-and-Visualization-RAG-chatbot
+```
+
+### 2. **Create a Virtual Environment**
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+### 3. **Install Requirements**
+```bash
+pip install -r requirements.txt
+```
+
+### 4. **Initialize the Database**
+```bash
+python init_db.py
+```
+
+### 5. **Run the FastAPI Backend**
+```bash
+uvicorn main:app --reload
+```
+- The backend will be available at `http://localhost:8000`
+
+### 6. **Run the Streamlit Frontend**
+```bash
+streamlit run app.py
+```
+- The frontend will be available at the URL shown in your terminal (usually `http://localhost:8501`).
+
+---
+
+---
+
+## System Architecture
+
+The following diagram illustrates the architecture of the system, including the interaction between the frontend, backend, vector database, and external APIs:
+
+![System Architecture](https://drive.google.com/file/d/1uI-g6R6WVILaATpijdt0myHpp3DB_NQJ/view?usp=sharing)
+
+---
+
 
 ## Project Directory Structure
 
@@ -129,44 +177,6 @@ To test the API endpoints, use the Postman collection:
 - **Headers:** Cookie with `session_id`
 - **Response:** `{ "query": "...", "answer": "..." }`
 
-
----
-
-## Installation Guide
-
-### 1. **Clone the Repository**
-```bash
-git clone <repo-url>
-cd Data-Processing-and-Visualization-RAG-chatbot
-```
-
-### 2. **Create a Virtual Environment**
-```bash
-python3 -m venv venv
-source venv/bin/activate
-```
-
-### 3. **Install Requirements**
-```bash
-pip install -r requirements.txt
-```
-
-### 4. **Initialize the Database**
-```bash
-python init_db.py
-```
-
-### 5. **Run the FastAPI Backend**
-```bash
-uvicorn main:app --reload
-```
-- The backend will be available at `http://localhost:8000`
-
-### 6. **Run the Streamlit Frontend**
-```bash
-streamlit run app.py
-```
-- The frontend will be available at the URL shown in your terminal (usually `http://localhost:8501`).
 
 ---
 
