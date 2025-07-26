@@ -13,8 +13,9 @@
    
 # Data Processing and Visualization RAG Chatbot
 
-[Watch the Demo Video](https://drive.google.com/uc?export=view&id=1asD8Ez7uraPktpe78OHq1at3WW7WRDVi)
+[![Watch the Demo Video](https://img.youtube.com/vi/ljjOtt2aoJs/0.jpg)](https://www.youtube.com/watch?v=ljjOtt2aoJs)
 
+**Note:** Watch the demo video at **2x speed** 
 
 # Data Processing and Visualization RAG Chatbot
 
