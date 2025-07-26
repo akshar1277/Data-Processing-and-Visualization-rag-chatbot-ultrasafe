@@ -79,7 +79,7 @@ def send_query(query):
 # --- Authentication Modal ---
 def show_auth_modal():
     with st.container():
-        st.markdown("### Welcome to Document Chat Assistant")
+        st.markdown("### Data Processing and Visualization RAG Chatbot")
         
         # Show signup success message
         if st.session_state.get("signup_success", False):
