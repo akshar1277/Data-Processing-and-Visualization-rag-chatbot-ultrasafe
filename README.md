@@ -4,6 +4,22 @@ A Retrieval-Augmented Generation (RAG) chatbot that allows users to upload docum
 
 ---
 
+## Documentation
+
+For a detailed guide on this project, refer to the DeepWiki guide:
+
+**[DeepWiki Guide: Data Processing and Visualization RAG Chatbot](https://deepwiki.com/akshar1277/Data-Processing-and-Visualization-rag-chatbot-ultrasafe/1-overview)**
+
+---
+## Postman Collection
+
+To test the API endpoints, use the Postman collection:
+
+**[Postman Collection: Data Processing and Visualization RAG Chatbot](https://documenter.getpostman.com/view/23504381/2sB34oDdP6)**
+
+---
+
+
 ## Project Directory Structure
 
 ```
@@ -46,16 +62,35 @@ A Retrieval-Augmented Generation (RAG) chatbot that allows users to upload docum
 
 ---
 
-## Project Overview
+## Key Features
 
-This project implements a RAG-based chatbot system with the following features:
+### 1. **Document Upload and Preprocessing**
+- Users can upload documents in various formats, including **PDF, DOC, DOCX, and TXT**.
+- During the upload process, **preprocessing techniques** such as text cleaning and chunking are applied to prepare the document for storage in the vector database.
 
-- **User Authentication:** Signup and login with secure password hashing.
-- **Document Upload:** Upload PDF, DOC, DOCX, or TXT files for processing.
-- **RAG Chatbot:** Ask questions about your uploaded documents and get context-aware answers.
-- **Session Management:** Each user’s documents and chat sessions are isolated.
-- **Frontend:** Streamlit app for easy interaction.
-- **Backend:** FastAPI for API endpoints and document processing.
+### 2. **Vector Database Integration**
+- The project uses **Pinecone** as the vector database to store document embeddings.
+- Uploaded documents are split into smaller chunks, embedded using a custom embedding class, and stored in the vector database for efficient retrieval.
+
+### 3. **Custom UltraSafe API Integration**
+- Custom classes were created to interact with the **UltraSafeAI API** for embedding generation and reranking.
+- The `UltraSafeAIEmbeddings` class handles the generation of embeddings for document chunks and queries.
+- The `UltraSafeAIReranker` class is used to rerank retrieved results based on their relevance to the user query.
+
+### 4. **Reranking for Enhanced Retrieval**
+- During the retrieval process, the system applies **reranking** to ensure the most relevant document chunks are prioritized.
+- This is achieved by leveraging the **UltraSafeAI reranking API**, which sorts the retrieved chunks based on their relevance scores.
+
+### 5. **Interactive Q&A**
+- Users can ask questions about their uploaded documents, and the chatbot provides **context-aware answers**.
+- The chatbot strictly adheres to the provided document context, ensuring accurate and reliable responses.
+
+### 6. **User Authentication and Session Management**
+- Secure user authentication is implemented using **hashed passwords** and **session cookies**.
+- Each user's documents and chat sessions are isolated, ensuring **privacy and security**.
+
+### 7. **Langfuse Observability**
+- The project integrates **Langfuse** for observability, providing detailed logs and tracing for chatbot interactions and performance monitoring.
 
 ---
 
@@ -191,10 +226,11 @@ Make sure to keep your `.env` file private and never share it publicly to avoid 
 Langfuse provides observability for the chatbot's interactions and performance. Below are two screenshots showcasing its functionality:
 
 ### Screenshot 1: **Chatbot Dashboard Logs**
-![Langfuse Dashboard Logs](https://drive.google.com/file/d/12302blWCT7L6UTGMZ_G1y-KSLtox7pHX/view?usp=sharing)
+
+![Langfuse Dashboard Logs](https://drive.google.com/uc?export=view&id=12302blWCT7L6UTGMZ_G1y-KSLtox7pHX)
 
 ### Screenshot 2: **Langfuse Tracing**
-![Langfuse Tracing ](https://drive.google.com/file/d/1sq-sVwf4IEd74AYRQOSGZ7Kuu_PrqKz9/view?usp=sharing)
+![Langfuse Tracing](https://drive.google.com/uc?export=view&id=1sq-sVwf4IEd74AYRQOSGZ7Kuu_PrqKz9)
 
 ## Notes
 
