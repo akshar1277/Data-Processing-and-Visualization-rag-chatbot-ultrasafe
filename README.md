@@ -57,6 +57,28 @@ streamlit run app.py
 
 ---
 
+## Sample `.env` File
+
+Below is a sample `.env` file to configure the environment variables required for the project. Replace the placeholder values with your actual credentials and settings.
+
+```properties
+# Sample .env file
+PINECONE_API_KEY=your-pinecone-api-key
+PINECONE_ENV=your-pinecone-environment
+VECTOR_DIM=1536
+INDEX_NAME=your-index-name
+PINECONE_CLOUD=aws
+PINECONE_REGION=your-region
+PINECONE_INDEX=your-index-name
+ULTRASAFE_API_KEY=your-ultrasafe-api-key
+ULTRASAFE_API_EMBEDDINGS_BASE=https://api.your-domain.com/embed/embeddings
+ULTRASAFE_MODEL=your-model-name
+LANGFUSE_SECRET_KEY=your-langfuse-secret-key
+LANGFUSE_PUBLIC_KEY=your-langfuse-public-key
+LANGFUSE_HOST=https://your-langfuse-host.com
+```
+
+
 ---
 
 ## System Architecture
@@ -177,56 +199,6 @@ The following diagram illustrates the architecture of the system, including the 
 - **Headers:** Cookie with `session_id`
 - **Response:** `{ "query": "...", "answer": "..." }`
 
-
----
-
-
-
-## How to Use
-
-### 1. **Sign Up / Log In**
-- Open the Streamlit app in your browser.
-- Use the authentication modal to sign up or log in.
-
-### 2. **Upload a Document**
-- Click the 📎 (paperclip) icon in the chat input area.
-- Select a PDF, DOC, DOCX, or TXT file to upload.
-- Wait for the upload confirmation.
-
-### 3. **Chat with Your Document**
-- Type your question in the chat input and press "Send".
-- The chatbot will answer based on the content of your uploaded document.
-
-### 4. **Session Management**
-- Start new chat sessions or revisit previous ones from the sidebar.
-
-### 5. **Logout**
-- Use the "Logout" button in the sidebar to end your session.
-
----
-
-## Sample `.env` File
-
-Below is a sample `.env` file to configure the environment variables required for the project. Replace the placeholder values with your actual credentials and settings.
-
-```properties
-# Sample .env file
-PINECONE_API_KEY=your-pinecone-api-key
-PINECONE_ENV=your-pinecone-environment
-VECTOR_DIM=1536
-INDEX_NAME=your-index-name
-PINECONE_CLOUD=aws
-PINECONE_REGION=your-region
-PINECONE_INDEX=your-index-name
-ULTRASAFE_API_KEY=your-ultrasafe-api-key
-ULTRASAFE_API_EMBEDDINGS_BASE=https://api.your-domain.com/embed/embeddings
-ULTRASAFE_MODEL=your-model-name
-LANGFUSE_SECRET_KEY=your-langfuse-secret-key
-LANGFUSE_PUBLIC_KEY=your-langfuse-public-key
-LANGFUSE_HOST=https://your-langfuse-host.com
-```
-
-Make sure to keep your `.env` file private and never share it publicly to avoid exposing sensitive information.
 
 ---
 
