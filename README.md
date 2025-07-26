@@ -186,6 +186,16 @@ Make sure to keep your `.env` file private and never share it publicly to avoid 
 ---
 
 
+## Langfuse Observability
+
+Langfuse provides observability for the chatbot's interactions and performance. Below are two screenshots showcasing its functionality:
+
+### Screenshot 1: **Chatbot Dashboard Logs**
+![Langfuse Dashboard Logs](https://drive.google.com/file/d/12302blWCT7L6UTGMZ_G1y-KSLtox7pHX/view?usp=sharing)
+
+### Screenshot 2: **Langfuse Tracing**
+![Langfuse Tracing ](https://drive.google.com/file/d/1sq-sVwf4IEd74AYRQOSGZ7Kuu_PrqKz9/view?usp=sharing)
+
 ## Notes
 
 - Each user’s documents and chat sessions are private and isolated.
