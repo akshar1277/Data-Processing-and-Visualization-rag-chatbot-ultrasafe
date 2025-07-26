@@ -11,8 +11,9 @@
 9. [API Endpoints](#api-endpoints)
 10. [Langfuse Observability](#langfuse-observability)
    
+# Data Processing and Visualization RAG Chatbot
 
-
+[Watch the Demo Video](https://drive.google.com/uc?export=view&id=1sq-sVwf4IEd74AYRQOSGZ7Kuu_PrqKz9)
 
 
 # Data Processing and Visualization RAG Chatbot
@@ -153,7 +154,7 @@ The following diagram illustrates the architecture of the system, including the 
 
 ### 1. **Document Upload and Preprocessing**
 - Users can upload documents in various formats, including **PDF, DOC, DOCX, and TXT**.
-- During the upload process, **preprocessing techniques** such as text cleaning and chunking are applied to prepare the document for storage in the vector database.
+- During the upload process, **Parallel processing techniques** such as text cleaning and chunking are applied to prepare the document for storage in the vector database.
 
 ### 2. **Vector Database Integration**
 - The project uses **Pinecone** as the vector database to store document embeddings.
