@@ -1,3 +1,20 @@
+# Table of Contents
+
+1. [Introduction](#data-processing-and-visualization-rag-chatbot)
+2. [Documentation](#documentation)
+3. [Postman Collection](#postman-collection)
+4. [Installation Guide](#installation-guide)
+5. [Sample `.env` File](#sample-env-file)
+6. [System Architecture](#system-architecture)
+7. [Project Directory Structure](#project-directory-structure)
+8. [Key Features](#key-features)
+9. [API Endpoints](#api-endpoints)
+10. [Langfuse Observability](#langfuse-observability)
+   
+
+
+
+
 # Data Processing and Visualization RAG Chatbot
 
 A Retrieval-Augmented Generation (RAG) chatbot that allows users to upload documents (PDF, DOC, DOCX, TXT), processes them, and enables interactive Q&A over the uploaded content. The project features user authentication, document upload, and a conversational interface powered by Streamlit and FastAPI.
