@@ -11,7 +11,7 @@
 9. [API Endpoints](#api-endpoints)
 10. [Langfuse Observability](#langfuse-observability)
    
-# Data Processing and Visualization RAG Chatbot
+# Demo 
 
 [![Watch the Demo Video](https://img.youtube.com/vi/ljjOtt2aoJs/0.jpg)](https://www.youtube.com/watch?v=ljjOtt2aoJs)
 
