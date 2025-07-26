@@ -85,7 +85,7 @@ LANGFUSE_HOST=https://your-langfuse-host.com
 
 The following diagram illustrates the architecture of the system, including the interaction between the frontend, backend, vector database, and external APIs:
 
-![System Architecture](https://drive.google.com/file/d/1uI-g6R6WVILaATpijdt0myHpp3DB_NQJ/view?usp=sharing)
+![System Architecture](https://drive.google.com/uc?export=view&id=1uI-g6R6WVILaATpijdt0myHpp3DB_NQJ)
 
 ---
 
